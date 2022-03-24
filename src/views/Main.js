@@ -48,7 +48,6 @@ const Main = (props) => {
                         products.map((item, i) => {
                             return <tr key={i}>
                                 <td><Link to={`/products/${item._id}`}>{item.title}</Link></td>
-                                <td>{item.company}</td>
                                 <td>{item.price}</td>
                                 <td>{item.description}</td>
                                 <td className="d-flex m-2"><button className="btn btn-primary btn-lg"> Edit</button> <button onClick={()=>onDeleteHandler(item._id, i)} className="btn btn-primary btn-lg mx-2">Delete</button></td>
